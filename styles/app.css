@@ -1,1 +1,14 @@
-. 
+:root{
+    --sidebar-color: #fff;
+    --primery-color: #fff;
+    --column-color: #fff;
+    --text-first-color: #1C1D22;
+    --text-second-color: rgba(28, 29, 34, 0.5);
+    --item-color: rgba(28, 29, 34, 0.04);
+}
+
+
+
+html{
+    font-size: 62.5%;   /*  10px */
+}
