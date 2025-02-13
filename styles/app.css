@@ -17,6 +17,7 @@ html{
 body{
     background-color: rebeccapurple;
     font-family: "Exo2-Medium";
+    display: flex;
 }
 
 
@@ -57,6 +58,14 @@ ul{
 */
 
 
+.logo-svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
 
 
 .sidebar{
@@ -73,15 +82,29 @@ ul{
 }
 
 .menu-list{
-    margin-top: 2rem;
+    margin-top: 1.3rem;
 }
 
 .menu-list__item{
+    width: 4.8rem;
+    height: 4.8rem;
     padding: 1.5rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
 }
 
 .menu-list__link{
 
+}
+
+.menu-list__item--active{
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 1rem auto;
 }
 
 .sidebar__icon{
@@ -118,6 +141,13 @@ ul{
     background-color: var(--sidebar-color);
     height: 100vh;
     width: 35rem;
+    transition: all .3s ease-out;
+}
+
+.panel--close{
+    width: 0;
+    overflow: hidden;
+    transition: all .3s ease-in;
 }
 
 .panel__wrapper{
@@ -131,6 +161,7 @@ ul{
     padding: 2rem;
     font-family: "Exo2-SemiBold";
     font-size: 2.5rem;
+    
 }
 
 .panel__svg{
