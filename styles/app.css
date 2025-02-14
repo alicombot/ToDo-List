@@ -17,9 +17,16 @@ html{
 body{
     background-color: rebeccapurple;
     font-family: "Exo2-Medium";
-    display: flex;
 }
 
+
+
+
+.container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
 
 
 
@@ -174,3 +181,6 @@ ul{
     align-items: center;
     margin-right: 2rem;
 }
+
+
+
