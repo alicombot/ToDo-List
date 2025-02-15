@@ -23,6 +23,7 @@ body{
 
 
 .container{
+    width: 100%;
     display: flex;
     margin: 0;
     padding: 0;
@@ -184,3 +185,99 @@ ul{
 
 
 
+/* 
+
+
+------------
+   header
+------------
+
+
+*/
+
+
+
+
+.header{
+
+    width: 100%;
+    height: 8rem;
+    padding: 1rem 2rem 1rem 2rem;
+    background-color: var(--primery-color);
+    align-content: center;
+    
+
+}
+
+.nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__title{
+
+    font-family: "Exo2-Bold";
+    font-size: 2rem;
+}
+
+.nav__items{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 1rem;
+}
+
+
+
+.profile__image{
+
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.nav__item--date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    flex-direction: row-reverse;
+
+}
+
+.date{
+
+    font-family: "Exo2-SemiBold";
+    color: rgba(28, 29, 34, 50%);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav__item--notification{
+    position: relative;
+}
+
+.nav__item--notification::before{
+    content: " ";
+    position: absolute;
+    width:.6rem;
+    height: .6rem;
+    background-color: darkorange;
+    border-radius: 100%;
+    right: 0;
+    top: 0;
+    left: 1rem;
+    bottom: 1.2rem;
+    margin: auto;
+}
+
+
+.nav__item--search{
+
+}
