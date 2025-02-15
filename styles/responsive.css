@@ -1,0 +1,23 @@
+@media (max-width: 1400px) {
+    
+}
+
+@media (max-width: 1200px){
+
+}
+
+@media (max-width: 992px){
+    .panel{
+        width: 0;
+        overflow: hidden;
+        transition: all .5s ease-in;
+    }
+}
+
+@media (max-width: 768px){
+
+}
+
+@media (max-width: 576px){
+
+}

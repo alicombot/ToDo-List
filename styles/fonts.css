@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Exo2-Bold";
+    src: url("../fonts/Exo2-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Exo2-Medium";
+    src: url(../fonts/Exo2-Medium.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Exo2-SemiBold";
+    src: url(../fonts/Exo2-SemiBold.ttf);
+}

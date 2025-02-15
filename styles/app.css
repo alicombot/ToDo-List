@@ -1,0 +1,186 @@
+:root{
+    --sidebar-color: #fff;
+    --primery-color: #fff;
+    --column-color: #fff;
+    --text-first-color: #1C1D22;
+    --text-second-color: rgba(28, 29, 34, 0.5);
+    --item-color: rgba(28, 29, 34, 0.04);
+}
+
+
+
+html{
+    font-size: 62.5%;   /*  10px */
+}
+
+
+body{
+    background-color: rebeccapurple;
+    font-family: "Exo2-Medium";
+}
+
+
+
+
+.container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/* 
+
+
+-----------------
+   reset-style
+-----------------
+
+
+*/
+
+
+
+
+
+ul{
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+
+
+/* 
+
+
+------------
+   sidebar
+------------
+
+
+*/
+
+
+.logo-svg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.8rem;
+    height: 4.8rem;
+}
+
+
+
+.sidebar{
+    background-color: #1C1D22;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-list{
+    margin-top: 1.3rem;
+}
+
+.menu-list__item{
+    width: 4.8rem;
+    height: 4.8rem;
+    padding: 1.5rem 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.menu-list__link{
+
+}
+
+.menu-list__item--active{
+    width: 4.8rem;
+    height: 4.8rem;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 1rem auto;
+}
+
+.sidebar__icon{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+
+.sidebar__wrapper{
+    padding: 1.5rem 2.5rem;
+}
+
+
+
+
+
+
+
+
+/* 
+
+
+------------
+   panel
+------------
+
+
+*/
+
+
+
+.panel{
+    padding-left: 7.5rem;
+    background-color: var(--sidebar-color);
+    height: 100vh;
+    width: 35rem;
+    transition: all .3s ease-out;
+}
+
+.panel--close{
+    width: 0;
+    overflow: hidden;
+    transition: all .3s ease-in;
+}
+
+.panel__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panel__title{
+    margin: 0;
+    padding: 2rem;
+    font-family: "Exo2-SemiBold";
+    font-size: 2.5rem;
+    
+}
+
+.panel__svg{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgba(28, 29, 34, 0.07);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+
+
