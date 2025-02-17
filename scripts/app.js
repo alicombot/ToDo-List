@@ -8,6 +8,7 @@ menuList.forEach(menuList =>{
     menuList.addEventListener('click', function(){
         document.querySelector(".menu-list__item--active").classList.remove("menu-list__item--active")
         document.querySelector(".panel").classList.toggle("panel--close")
+        document.querySelector(".wrapper").classList.toggle("wrapper-close")
         this.classList.add('menu-list__item--active')
     })
 })

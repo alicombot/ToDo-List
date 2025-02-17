@@ -87,6 +87,7 @@ ul{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    z-index: 100;
 }
 
 .menu-list{
@@ -150,7 +151,10 @@ ul{
     height: 100vh;
     width: 35rem;
     transition: all .3s ease-out;
+    position: fixed;
+    z-index: 99;
 }
+
 
 .panel--close{
     width: 0;
@@ -263,10 +267,14 @@ ul{
 
 
 .wrapper{
-
     width: 100%;
+    padding-left: 0;
+    transition: all .2s ease-in;
 }
-
+.wrapper-close{
+    padding-left: 35rem;
+    transition: all .2s ease-in;
+}
 .header{
 
     width: 100%;
