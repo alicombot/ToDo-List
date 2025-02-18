@@ -179,8 +179,8 @@ ul{
 }
 
 .sidebar__icon{
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 
@@ -215,6 +215,9 @@ ul{
     transition: all .3s ease-out;
     position: fixed;
     z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 
@@ -234,7 +237,7 @@ ul{
     margin: 0;
     padding: 2rem;
     font-family: "Exo2-SemiBold";
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     
     
 }
@@ -251,7 +254,62 @@ ul{
 }
 
 
+.panel-them{
+    width: 23rem;
+    border-radius: 6rem;
+    background-color: rgba(28, 29, 34, 0.04);
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+    align-items: center;
 
+}
+
+
+.panel-them__dark,
+.panel-them__light{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(23rem - 50%);
+    height: 3rem;
+    cursor: pointer;
+    color: rgba(28, 29, 34, 0.5);
+    margin: .5rem;
+    transition: all .1s ease-in;
+}
+.panel-them--active{
+    width: calc(23rem - 50%);
+    height: 3rem;
+    background-color: #fff;
+    border-radius: 5rem;
+    margin: .5rem;
+    transition: all .1s ease-in;
+}
+
+.panel-them--active .panel-them__title{
+    color: rgba(28, 29, 34, 1);
+}
+
+.panel-them--active .panel-them__icon--dark,
+.panel-them--active .panel-them__icon--light{
+    stroke: rgba(28, 29, 34, 1);
+}
+
+.panel-them__icon--light{
+
+}
+.panel-them__icon--dark{
+
+}
+.panel-them__title{
+    font-family: "Exo2-SemiBold";
+    font-size: 1.2rem;
+    margin-left: .5rem;
+}
+.panel-them__icon--dark{
+
+}
 
 
 
@@ -370,7 +428,7 @@ ul{
 
 .wrapper{
     width: 100%;
-    padding-left: 0;
+    padding-left: 7.5rem;
     transition: all .2s ease-in;
 }
 .wrapper--close{
