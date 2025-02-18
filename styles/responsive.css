@@ -21,7 +21,7 @@
     .wrapper {
         width: 100%;
         padding-left: 0;
-
+        margin-left: 7.5rem;
 
         .task__title h3 {
             font-size: 1.3rem;
