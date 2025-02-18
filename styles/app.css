@@ -282,7 +282,7 @@ ul{
 }
 
 .nav__title{
-
+    min-width: 25rem;
     font-family: "Exo2-Bold";
     font-size: 2rem;
 }
@@ -364,7 +364,7 @@ ul{
 .content{
     padding: 0 3rem 0 3rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
@@ -469,6 +469,8 @@ ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+
 }
 
 .task__title h3{
@@ -476,6 +478,7 @@ ul{
     font-family: "Exo2-Bold";
     font-size: 1.5rem;
     color: #1C1D22;
+    max-width: 21rem;
 }
 
 .task__title--icon{

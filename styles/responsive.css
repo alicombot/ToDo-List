@@ -4,6 +4,11 @@
 
 @media (max-width: 1200px){
 
+    .content__items{
+        width: 35rem;
+    }
+    
+
 }
 
 @media (max-width: 992px){
@@ -12,12 +17,87 @@
         overflow: hidden;
         transition: all .5s ease-in;
     }
+   
+    .task__title h3{
+        font-size: 1.3rem;
+    }
+
+    .task__description{
+        font-size: 1.1rem;
+    }
+
+    .task__footer--date{
+
+        font-size: 1rem;
+    }
+
+    .task__title--icon{
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .task__progres--icon{
+        font-size: 1.1rem;
+    }
+
+    .task__progres--count{
+        font-size: 1.2rem;
+    }
+
+    .task{
+        height: 18rem;
+    }
+
+    .task__footer--icon{
+        top: -2rem;
+    }
+
+    .task__title h3{
+        
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+
+    
+}
+
+
+@media (max-width: 920px){
+    .content{
+
+        flex-wrap: wrap;
+    }
+
+    .content__items{
+        flex-grow: 1;
+    }
 }
 
 @media (max-width: 768px){
+    .nav__item--search{
 
+        display: none;
+    }
+
+    .nav__item--notification{
+
+        display: none;
+    }
+    .content{
+        flex-wrap: wrap;
+    }   
 }
 
 @media (max-width: 576px){
+    .nav__item--date{
 
+        display: none;
+    }
+    .nav__title{
+        font-size: 1.5rem;
+    }
+
+    
 }
