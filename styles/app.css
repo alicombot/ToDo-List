@@ -210,22 +210,42 @@ ul{
 .panel{
     padding-left: 7.5rem;
     background-color: var(--sidebar-color);
-    height: 100vh;
+    /* height: 100vh; */
     width: 35rem;
     transition: all .3s ease-out;
     position: fixed;
     z-index: 99;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    transition: all .3s ease-in;
+    overflow: visible;
 }
-
 
 .panel--close{
     width: 0;
     overflow: hidden;
+    opacity: 0;
     transition: all .3s ease-in;
 }
+
+
+
+.panel__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+
+}
+
+
+.content--show{
+    height: 100vh;
+    overflow: visible;
+    opacity: 1;
+    transition: all .3s ease-in;
+}
+
 
 .panel__head{
     display: flex;

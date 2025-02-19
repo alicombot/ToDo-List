@@ -27,7 +27,7 @@
                             </svg>
                         </a>
                     </div>
-                    <li class="menu-list__item">
+                    <li class="menu-list__item menu-list__item--active" data-content-id="#panel-home">
                         <a href="#" class="menu-list__link">
                             <svg class="sidebar__icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
                                 class="size-6">
@@ -36,7 +36,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="menu-list__item">
+                    <li class="menu-list__item" data-content-id="#panel-account">
                         <a href="#" class="menu-list__link">
                             <svg class="sidebar__icon" width="22" height="22" viewBox="0 0 22 22" fill="none">
                                 <path
@@ -46,7 +46,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="menu-list__item menu-list__item--active">
+                    <li class="menu-list__item ">
                         <a href="#" class="menu-list__link">
                             <svg class="sidebar__icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
                                 class="size-6">
@@ -81,56 +81,59 @@
                 </div>
             </nav>
             <section class="panel">
-                <div class="panel__wrapper">
-                    <div class="panel__head">
-                        <h2 class="panel__title">Projects</h2>
-                        <div class="panel__svg">
-                            <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g opacity="0.4">
-                                    <path d="M9 5L1 5" stroke="#1C1D22" stroke-width="2" stroke-linecap="round" />
-                                    <path d="M5 9L5 1" stroke="#1C1D22" stroke-width="2" stroke-linecap="round" />
-                                </g>
-                            </svg>
+                <div class="panel__content content--show" id="panel-home"> 
+                    <div class="panel__wrapper">
+                        <div class="panel__head">
+                            <h2 class="panel__title">Projects</h2>
+                            <div class="panel__svg">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g opacity="0.4">
+                                        <path d="M9 5L1 5" stroke="#1C1D22" stroke-width="2" stroke-linecap="round" />
+                                        <path d="M5 9L5 1" stroke="#1C1D22" stroke-width="2" stroke-linecap="round" />
+                                    </g>
+                                </svg>
+                            </div>
+                        </div>
+    
+                        <div class="manage-list">
+                            <div class="manage-list__wrapper manage-list--active">
+                                <h3 class="manage-list__title">Project</h3>
+                                <span class="chevron-right"></span>
+                            </div>
+                            <div class="manage-list__content">
+                                <ul class="status-task">
+                                    <li class="status-task__item">All projects (3)</li>
+                                    <li class="status-task__item">Design system</li>
+                                    <li class="status-task__item">User flow</li>
+                                    <li class="status-task__item">Ux research</li>
+                                </ul>
+                            </div>
+                            <div class="manage-list__wrapper">
+                                <h3 class="manage-list__title">Team</h3>
+                                <span class="chevron-right"></span>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="manage-list">
-                        <div class="manage-list__wrapper manage-list--active">
-                            <h3 class="manage-list__title">Project</h3>
-                            <span class="chevron-right"></span>
+                    <div class="panel-them">
+                        <div class="panel-them__light panel-them__change">
+                            <svg class="panel-them__icon--light" fill="none" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                              </svg>
+                              
+                            <h4 class="panel-them__title">Light</h4>
                         </div>
-                        <div class="manage-list__content">
-                            <ul class="status-task">
-                                <li class="status-task__item">All projects (3)</li>
-                                <li class="status-task__item">Design system</li>
-                                <li class="status-task__item">User flow</li>
-                                <li class="status-task__item">Ux research</li>
-                            </ul>
-                        </div>
-                        <div class="manage-list__wrapper">
-                            <h3 class="manage-list__title">Team</h3>
-                            <span class="chevron-right"></span>
+                        <div class="panel-them__dark panel-them__change panel-them--active">
+                            <svg class="panel-them__icon--dark" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
+                              </svg>
+                              
+                            <h4 class="panel-them__title">Dark</h4>
                         </div>
                     </div>
                 </div>
-                <div class="panel-them">
-                    <div class="panel-them__light panel-them__change">
-                        <svg class="panel-them__icon--light" fill="none" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
-                          </svg>
-                          
-                        <h4 class="panel-them__title">Light</h4>
-                    </div>
-                    <div class="panel-them__dark panel-them__change panel-them--active">
-                        <svg class="panel-them__icon--dark" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z" />
-                          </svg>
-                          
-                        <h4 class="panel-them__title">Dark</h4>
-                    </div>
-                   
-                    
+                <div class="panel__content" id="panel-account">
+                    <h1>alicombot</h1>
                 </div>
             </section>
         </aside>
