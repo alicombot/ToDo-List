@@ -1,0 +1,174 @@
+:root{
+    --sidebar-color: #fff;
+    --primery-color: #fff;
+    --column-color: #fff;
+    --text-first-color: #1C1D22;
+    --text-second-color: rgba(28, 29, 34, 50%);
+    --item-color: rgba(28, 29, 34, 0.04);
+}
+
+
+
+html{
+    font-size: 62.5%;   /*  10px */
+}
+
+
+body{
+    background-color: var(--primery-color);
+    font-family: "Exo2-Medium";
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/*
+
+-- Reset Styles
+
+*/
+a , a:active, a:visited {
+
+    color: #000000;
+    text-decoration: none;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+
+
+
+
+
+/*
+
+ - Header -
+
+*/
+
+
+.header {
+
+    background-color: #1d233d ;
+    z-index: 100;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2.5rem ;
+}
+
+.nav__logo {
+
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    font-family: "Exo2-Bold";
+    color: var(--primery-color);
+    font-size: 2rem;
+    margin: 0;
+    min-width: 13rem;
+}
+
+
+.nav__btn{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    
+
+}
+
+.nav__btn--login,.nav__btn--signup{
+    
+   
+    font-family: "Exo2-SemiBold";
+    font-size: 1.4rem;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 2rem;
+    transition: all 120ms ease-in;
+    
+    
+}
+
+.nav__btn--login a , .nav__btn--signup a {
+    color: var(--primery-color);
+}
+.nav__btn--login:hover , .nav__btn--signup:hover{
+    
+    background-color: #775ee9;
+    transition: all 200ms ease-in;
+
+}
+
+
+.nav__content{
+
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+
+
+.menu {
+    
+    display: flex;
+    z-index: 100;
+    font-family: "Exo2-SemiBold";
+    font-size: 1.4rem;
+    
+}
+
+.menu__item {
+
+    margin-right: 4rem;
+
+}
+
+.menu__item:last-child {
+    margin-right: 0rem;
+}
+
+
+
+.menu__link {
+
+    display: inline-block;
+    color: inherit;
+    font-family: "Exo2-SemiBold";
+    transition: color 120ms ease-in;
+   
+}
+
+.menu__item a {
+    color: var(--primery-color);
+}
+
+.menu__link:hover{
+    color: #775ee9;
+}
+
+
+
+
