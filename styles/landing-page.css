@@ -35,6 +35,8 @@ body{
 -- Reset Styles
 
 */
+
+
 a , a:active, a:visited {
 
     color: #000000;
@@ -49,6 +51,16 @@ ul {
 }
 
 
+/*
+
+- helper classes -
+
+*/
+
+
+.align-items-center{
+    align-items: center;
+}
 
 
 
@@ -63,18 +75,14 @@ ul {
 .header {
 
     background-color: #1d233d ;
-    z-index: 100;
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
+  
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 2.5rem ;
+    padding: 1.5rem 0 ;
 }
 
 .nav__logo {
@@ -172,3 +180,92 @@ ul {
 
 
 
+/*
+
+ - main -
+
+*/
+
+
+
+
+
+
+.main{
+    background-color: #1d233d ;
+}
+
+.home{
+    padding-top: 10rem;
+    padding-bottom: 9.6rem;
+}
+
+.row{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center
+        
+}
+
+.col-6{
+    
+}
+
+.home__content{
+
+    display: flex;
+    width: 50rem;
+    flex-direction: column;
+    
+}
+
+.home__title{
+
+    font-family: "Exo2-Bold";
+    font-size: 4rem;
+    margin: 0;
+    color: var(--primery-color);
+
+}
+
+.home__title span{
+    color: #775ee9;
+}
+
+.home__caption{
+
+    width: 41rem;
+    font-size: 1.2rem;
+    font-family: "Exo2-SemiBold";
+    margin: 2.5rem 0 0 0;
+    color: var(--primery-color);
+}
+
+.home__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Exo2-SemiBold";
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    background-color: #775ee9;
+    width: 10rem;
+    height: 4rem;
+    margin: 2.5rem 0 0 0;
+    
+}
+
+.home__link a{
+    color: var(--primery-color);
+}
+
+
+.home__picture{
+   
+}
+
+.home__image{
+    width: 60rem;
+    height: 40rem;
+}
