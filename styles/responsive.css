@@ -8,6 +8,10 @@
         width: 35rem;
     }
 
+    .nav__content{
+        gap: 5rem;
+    }
+
 
 }
 
@@ -102,6 +106,18 @@
             white-space: nowrap;
         }
 
+        .nav{
+            padding: 1.5rem 0;
+        }
+        
+        .menu__item{
+            margin-right: 2rem;
+        }
+    
+        .nav__content{
+            gap: 3rem;
+        }
+
     
 
 }
@@ -133,6 +149,10 @@
         .content {
             flex-wrap: wrap;
         }
+
+        .menu{
+            display: none;
+        }
     }
 
     @media (max-width: 576px) {
@@ -144,4 +164,12 @@
             font-size: 1.5rem;
         }
 
+    }
+
+
+    @media (max-width: 420px){
+
+        .nav__btn--login, .nav__btn--signup{
+            padding: 1rem;
+        }
     }

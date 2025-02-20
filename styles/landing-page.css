@@ -94,7 +94,7 @@ ul {
 .nav__btn{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    
     
 
 }
@@ -126,7 +126,7 @@ ul {
 
     display: flex;
     align-items: center;
-    gap: 5rem;
+    gap: 7rem;
 }
 
 
