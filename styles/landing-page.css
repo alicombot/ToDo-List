@@ -290,7 +290,7 @@ ul {
 
     font-family: "Exo2-Bold";
     font-size: 2.5rem;
-    width: 14rem;
+    width: 16rem;
     margin: auto;
 
 }
@@ -432,7 +432,6 @@ ul {
 
 
 .feature__item--logo{
-    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -468,4 +467,108 @@ ul {
 
 
 
+
+
+.how-it-work{
+
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    
+
+}
+
+.how-work{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 3rem;
+    
+    
+    
+}
+
+.how-work__top{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9rem;
+    height: 25rem;
+}
+
+.how-work__top--picture{
+
+    flex-basis: 50%;
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.how-work__top--image{
+
+    width: 45rem;
+    padding: 4rem;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+.how-work__top--text{
+
+    flex-basis: 50%;
+}
+
+
+.how-work__title{
+
+    font-family: "Exo2-Bold";
+    font-size: 2rem;
+}
+
+.how-work__caption{
+
+    font-family: "Exo2-SemiBold";
+    font-size: 1.5rem;
+    color: rgba(28, 29, 34, 100%) ;
+    line-height: 2rem;
+    width: 50rem;
+}
+
+
+.how-work__bottom{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9rem;
+    flex-direction: row-reverse;
+    height: 25rem;
+}
+
+.how-work__bottom--picture{
+
+    flex-basis: 50%;
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.how-work__bottom--image{
+
+    width: 37rem;
+    padding: 4rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.how-work__bottom--text{
+
+    flex-basis: 50%;
+}
 
