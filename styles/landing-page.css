@@ -196,8 +196,8 @@ ul {
 }
 
 .home{
-    padding-top: 10rem;
-    padding-bottom: 9.6rem;
+    padding-top: 9.8rem;
+    padding-bottom: 9.8rem;
 }
 
 .row{
@@ -213,17 +213,16 @@ ul {
 }
 
 .home__content{
-
-    display: flex;
-    width: 50rem;
-    flex-direction: column;
+    
     
 }
+
 
 .home__title{
 
     font-family: "Exo2-Bold";
     font-size: 4rem;
+    width: 50rem;
     margin: 0;
     color: var(--primery-color);
 
