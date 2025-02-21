@@ -192,12 +192,13 @@ ul {
 
 
 .main{
-    background-color: #1d233d ;
+     
 }
 
 .home{
     padding-top: 9.8rem;
     padding-bottom: 9.8rem;
+    background-color: #1d233d
 }
 
 .row{
@@ -217,7 +218,6 @@ ul {
     
 }
 
-
 .home__title{
 
     font-family: "Exo2-Bold";
@@ -235,7 +235,7 @@ ul {
 .home__caption{
 
     width: 41rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     font-family: "Exo2-SemiBold";
     margin: 2.5rem 0 0 0;
     color: var(--primery-color);
@@ -268,3 +268,107 @@ ul {
     width: 60rem;
     height: 40rem;
 }
+
+
+
+
+.aboutus{
+   padding-top: 6rem;
+   
+}
+
+
+.section-head{
+    
+    text-align: center;
+
+}
+
+.secttion-title{
+
+    font-family: "Exo2-Bold";
+    font-size: 2.5rem;
+    width: 11rem;
+    margin: auto;
+
+}
+
+.section-line{
+    width: 3rem;
+    height: .4rem;
+    background-color: #775ee9;
+    border-radius: 2rem;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.section-caption{
+
+    font-family: "Exo2-SemiBold";
+    font-size: 1.4rem;
+    width: 46rem;
+    margin: auto;
+    margin-top: 1rem;
+    color: rgba(28, 29, 34,100%);
+}
+
+.about{
+
+    display: flex;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    
+}
+
+.about__picture{
+    
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.about__image{
+
+    width: 50rem;
+    height: 50rem;
+    
+}
+
+.about__content{
+
+    
+    
+    font-family: "Exo2-SemiBold";
+    font-size: 1.4rem;
+    width: 58rem;
+    line-height: 2rem;
+    color: rgba(28, 29, 34,100%);
+    
+
+    
+}
+
+.about-content__btn{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Exo2-SemiBold";
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    background-color: #775ee9;
+    width: 10rem;
+    height: 4rem;
+    margin: 2.5rem 0 0 0;
+    
+
+
+}
+
+.about-content__btn a{
+    color: var(--primery-color);
+}
+
