@@ -273,7 +273,8 @@ ul {
 
 
 .aboutus{
-   padding-top: 6rem;
+    padding-top: 6rem;
+    
    
 }
 
@@ -281,10 +282,11 @@ ul {
 .section-head{
     
     text-align: center;
+   
 
 }
 
-.secttion-title{
+.section-title{
 
     font-family: "Exo2-Bold";
     font-size: 2.5rem;
@@ -312,42 +314,43 @@ ul {
     color: rgba(28, 29, 34,100%);
 }
 
+
 .about{
 
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin-top: 4rem;
-    margin-bottom: 3rem;
+    height: 54rem;
     
 }
 
 .about__picture{
     
-    flex-basis: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-basis: 48%;
     
 }
 
 .about__image{
 
-    width: 50rem;
-    height: 50rem;
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+    padding-top: 0;
+    padding-bottom: 0;
     
 }
 
 .about__content{
-
-    
     
     font-family: "Exo2-SemiBold";
-    font-size: 1.4rem;
-    width: 58rem;
+    font-size: 1.5rem;
     line-height: 2rem;
     color: rgba(28, 29, 34,100%);
-    
-
+    flex-basis: 52%;
+    padding: 4rem;
+    padding-top: 0;
+    padding-bottom: 0;
+   
     
 }
 
@@ -364,11 +367,11 @@ ul {
     height: 4rem;
     margin: 2.5rem 0 0 0;
     
-
-
 }
 
 .about-content__btn a{
     color: var(--primery-color);
 }
+
+
 

@@ -1,5 +1,12 @@
 @media (max-width: 1400px) {
+    .about{
+        height: 55rem;
+    }
 
+    .about__content{
+        padding-right: 0;
+        
+    }
 }
 
 @media (max-width: 1200px) {
@@ -33,6 +40,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+
+    .about__image{
+        padding: 0;
+
+        flex-basis: 45%;
+    }
+
+    .about__content{
+        flex-basis: 55%;
     }
 
 
@@ -159,6 +176,36 @@
             padding-bottom: 8rem ;
         }
 
+        .about{
+            flex-direction: column;
+            padding-top: 20rem;
+        }
+    
+        .about__image{
+            width: 40rem;
+        }
+    
+        .about__content{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            font-size: 1.4rem;
+            padding: 0;
+        }
+    
+        .section-title{
+            font-size: 2rem;
+        }
+    
+        .section-caption{
+            font-size: 1.2rem;
+        }
+    
+        .aboutus {
+            padding-top: 3rem;
+        }
+
     
 
 }
@@ -230,6 +277,38 @@
             font-size: 3rem;
         }
 
+        .about__image{
+            width: 35rem;
+        }
+    
+        .about{
+            padding-top: 20rem;
+        }
+    
+        .about__content{
+            font-size: 1.3rem;
+            width: 40rem;
+        }
+    
+        .section-caption{
+            width: 40rem;
+        }
+
+    }
+
+    @media (max-width: 440px){
+
+        .section-caption{
+            width: 39rem;
+        }
+    
+        .about__image{
+            width: 30rem;
+        }
+    
+        .about__content{
+            width: 29rem;
+        }
     }
 
 
@@ -237,5 +316,9 @@
 
         .nav__btn--login, .nav__btn--signup{
             padding: 1rem;
+        }
+
+        .section-caption{
+            width: 35rem;
         }
     }
