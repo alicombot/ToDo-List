@@ -432,6 +432,7 @@ ul {
 
 
 .feature__item--logo{
+    
     display: flex;
     align-items: center;
     justify-content: center;

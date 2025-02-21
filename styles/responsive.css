@@ -7,7 +7,13 @@
         padding-right: 0;
         
     }
+
+    .feature__image{
+        padding: 0;
+    }
+
 }
+
 
 @media (max-width: 1200px) {
 
@@ -50,6 +56,10 @@
 
     .about__content{
         flex-basis: 55%;
+    }
+
+    .feature__content--items{
+        width: 46rem;
     }
 
 
@@ -206,6 +216,29 @@
             padding-top: 3rem;
         }
 
+
+        .feature{
+
+            flex-direction: column-reverse;
+            padding-top: 0;
+            height: 59rem;
+        }
+    
+        .feature__image{
+    
+            width: 35rem;
+            
+        }
+    
+        .our-feature{
+            padding-top: 3rem;
+        }
+    
+        .feature__content--items{
+    
+            width: 90rem;
+        }
+
     
 
 }
@@ -222,7 +255,23 @@
             flex-grow: 1;
 
         }
+
+        .feature__content--items{
+            width: 46rem;
+        }
+    
+        .feature__image{
+            width: 40rem;
+            height: 40rem;
+        }
+    
+        .feature{
+            padding-top: 0;
+            height: 90rem;
+        }
     }
+
+
 
     @media (max-width: 768px) {
         .nav__item--search {
@@ -259,7 +308,10 @@
 
     }
 
+
+
     @media (max-width: 576px) {
+
         .nav__item--date {
             display: none;
         }
@@ -294,6 +346,24 @@
             width: 40rem;
         }
 
+        .feature__image{
+
+            width: 30rem;
+            height: 30rem;
+        }
+    
+        .feature__picture{
+            flex-basis: 45rem;
+        }
+    
+        .feature__content{
+            flex-basis: 80rem;
+        }
+    
+        .feature{
+            height: 75rem;
+        }
+
     }
 
     @media (max-width: 440px){
@@ -308,6 +378,27 @@
     
         .about__content{
             width: 29rem;
+        }
+
+        .feature__content--items{
+            width: 41rem;
+        }
+    
+        .feature{
+    
+            padding-top: 0;
+            padding-bottom: 3rem;
+            height: 110rem;
+        }
+    
+        .feature__content--item{
+    
+           width: 30rem;
+           height: auto;
+        }
+    
+        .feature__picture{
+            flex-basis: 33rem;
         }
     }
 
