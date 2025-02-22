@@ -309,7 +309,7 @@ ul {
 
     font-family: "Exo2-SemiBold";
     font-size: 1.4rem;
-    width: 46rem;
+    width: 45rem;
     margin: auto;
     margin-top: 1rem;
     color: rgba(28, 29, 34,100%);
@@ -586,9 +586,8 @@ ul {
     align-items: center;
     justify-content: center;
     padding-top: 6rem;
-    padding-bottom: 5rem;
     background-color: #1d233d;
-    border-radius: 6rem;
+    border-radius: 6rem 6rem 0 0;
     
 }
 
@@ -620,4 +619,13 @@ ul {
     
 }
 
+
+
+
+.copy-right{
+
+    color: var(--primery-color);
+    font-family: "Exo2-SemiBold";
+    margin-top: 2rem;
+}
 
