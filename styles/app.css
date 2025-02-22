@@ -24,6 +24,10 @@ body{
 }
 
 
+
+
+
+
 .container{
     width: 100%;
     display: flex;
@@ -333,6 +337,49 @@ ul{
 
 
 
+.form-panel-account{
+    padding: 3rem;
+}
+
+.panel__account{
+    
+}
+.panel-account__img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    object-fit: cover;
+    object-position: center center;
+    margin-bottom: 2.5rem; 
+}
+
+
+
+.panel-account__input{
+    outline: none;
+    height: 3.5rem;
+    width: 100%;
+    margin: 1rem 1rem 1rem 0;
+    border-radius: .8rem;
+    border-color: rgba(169, 169, 169, 1);
+    border-width: .1rem;
+    padding: 1rem;
+}
+
+
+.panel-account__input:focus{
+    outline: none;
+}
+
+.panel-account__update{
+    border: none;
+    height: 3.5rem;
+    width: 100%;
+    border-radius: .8rem;
+    background-color: rgba(23, 31, 29, 1);
+    color: rgba(255, 255, 255, 1);
+    margin-top: 1rem;
+}
 
 /* 
 
