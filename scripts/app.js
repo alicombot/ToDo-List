@@ -5,6 +5,8 @@ const panelthemChange = document.querySelectorAll(".panel-them__change");
 const panelContent = document.querySelectorAll(".panel__content");
 
 
+
+
 menuList.forEach(item => {
     item.addEventListener('click', function() {
         let contentId = this.getAttribute("data-content-id");
@@ -51,5 +53,6 @@ panelthemChange.forEach(panelthemChange => {
         this.classList.add("panel-them--active")
     })
 })
+
 
 

@@ -1,0 +1,638 @@
+:root{
+    --sidebar-color: #fff;
+    --primery-color: #fff;
+    --column-color: #fff;
+    --text-first-color: #1C1D22;
+    --text-second-color: rgba(28, 29, 34, 50%);
+    --item-color: rgba(28, 29, 34, 0.04);
+}
+
+
+
+html{
+    font-size: 62.5%;   /*  10px */
+}
+
+
+body{
+    background-color: var(--primery-color);
+    font-family: "Exo2-Medium";
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+
+
+
+
+/*
+
+-- Reset Styles
+
+*/
+
+
+a , a:active, a:visited {
+
+    color: #000000;
+    text-decoration: none;
+    
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+
+/*
+
+- helper classes -
+
+*/
+
+
+.align-items-center{
+    align-items: center;
+}
+
+
+
+
+/*
+
+ - Header -
+
+*/
+
+
+.header {
+
+    background-color: #1d233d ;
+  
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 0 ;
+}
+
+.nav__logo {
+
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 1rem;
+    font-family: "Exo2-Bold";
+    color: var(--primery-color);
+    font-size: 2rem;
+    margin: 0;
+    min-width: 13rem;
+}
+
+
+.nav__btn{
+    display: flex;
+    align-items: center;
+    
+    
+
+}
+
+.nav__btn--login,.nav__btn--signup{
+    
+   
+    font-family: "Exo2-SemiBold";
+    font-size: 1.4rem;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 2rem;
+    transition: all 120ms ease-in;
+    
+    
+}
+
+.nav__btn--login a , .nav__btn--signup a {
+    color: var(--primery-color);
+}
+.nav__btn--login:hover , .nav__btn--signup:hover{
+    
+    background-color: #775ee9;
+    transition: all 200ms ease-in;
+
+}
+
+
+.nav__content{
+
+    display: flex;
+    align-items: center;
+    gap: 7rem;
+}
+
+
+
+.menu {
+    
+    display: flex;
+    z-index: 100;
+    font-family: "Exo2-SemiBold";
+    font-size: 1.4rem;
+    
+}
+
+.menu__item {
+
+    margin-right: 4rem;
+
+}
+
+
+
+.menu__item:last-child {
+    margin-right: 0rem;
+}
+
+
+
+.menu__link {
+
+    display: inline-block;
+    font-family: "Exo2-SemiBold";
+    transition: color 120ms ease-in;
+   
+}
+
+.menu__item a {
+    color: var(--primery-color);
+}
+
+.menu__item--active a{
+
+    color: #775ee9;
+}
+
+.menu__link:hover{
+    color: #775ee9;
+}
+
+
+
+
+/*
+
+ - main -
+
+*/
+
+
+
+
+
+
+.main{
+     
+}
+
+.home{
+    padding-top: 9.8rem;
+    padding-bottom: 9.8rem;
+    background-color: #1d233d
+}
+
+.row{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center
+        
+}
+
+.col-6{
+    
+}
+
+.home__content{
+    
+    
+}
+
+.home__title{
+
+    font-family: "Exo2-Bold";
+    font-size: 4rem;
+    width: 50rem;
+    margin: 0;
+    color: var(--primery-color);
+
+}
+
+.home__title span{
+    color: #775ee9;
+}
+
+.home__caption{
+
+    width: 41rem;
+    font-size: 1.4rem;
+    font-family: "Exo2-SemiBold";
+    margin: 2.5rem 0 0 0;
+    color: var(--primery-color);
+    
+}
+
+.home__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Exo2-SemiBold";
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    background-color: #775ee9;
+    width: 10rem;
+    height: 4rem;
+    margin: 2.5rem 0 0 0;
+    
+}
+
+.home__link a{
+    color: var(--primery-color);
+}
+
+
+.home__picture{
+   
+}
+
+.home__image{
+    width: 60rem;
+    height: 40rem;
+}
+
+
+
+
+.aboutus{
+    padding-top: 6rem;
+    
+   
+}
+
+
+.section-head{
+    
+    text-align: center;
+   
+
+}
+
+.section-title{
+
+    font-family: "Exo2-Bold";
+    font-size: 2.5rem;
+    width: 24rem;
+    margin: auto;
+
+}
+
+.section-line{
+    width: 3rem;
+    height: .4rem;
+    background-color: #775ee9;
+    border-radius: 2rem;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.section-caption{
+
+    font-family: "Exo2-SemiBold";
+    font-size: 1.4rem;
+    width: 45rem;
+    margin: auto;
+    margin-top: 1rem;
+    color: rgba(28, 29, 34,100%);
+}
+
+
+.about{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 58rem;
+    
+}
+
+.about__picture{
+    
+    flex-basis: 48%;
+    
+}
+
+.about__image{
+
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    
+}
+
+.about__content{
+    
+    font-family: "Exo2-SemiBold";
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: rgba(28, 29, 34,100%);
+    flex-basis: 52%;
+    padding: 4rem;
+    padding-top: 0;
+    padding-bottom: 0;
+   
+    
+}
+
+.about-content__btn{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Exo2-SemiBold";
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    background-color: #775ee9;
+    width: 10rem;
+    height: 4rem;
+    margin: 2.5rem 0 0 0;
+    
+}
+
+.about-content__btn a{
+    color: var(--primery-color);
+}
+
+.our-feature{
+    background-color: #f3f6fd;
+    padding-top: 6rem;
+}
+
+
+.feature{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 58rem;
+
+}
+
+.feature__picture{
+    flex-basis: 50%;
+}
+
+.feature__image{
+
+    width: 100%;
+    height: 100%;
+    padding: 4rem;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+.feature__content{
+
+    
+    flex-basis: 50%;
+
+}
+
+.feature__content--items{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 60rem;
+    
+}
+
+.feature__content--item{
+
+    background-color: var(--primery-color);
+    width: 20rem;
+    height: 20rem;
+    border-radius: 2rem;
+    padding: 2.5rem 1.5rem 2.5rem 1.5rem;
+
+}
+
+
+.feature__item--logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    
+    background-color: #775ee9;
+}
+
+.feature__item--image{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.feature__item--title{
+    font-family: "Exo2-Bold";
+    font-size: 1.5rem;
+    margin: 0;
+    margin-top: 1.5rem;
+}
+
+.feature__item--caption{
+
+    font-family: "Exo2-SemiBold";
+    font-size: 1.2rem;
+    margin: 0;
+    margin-top: 1.5rem;
+    line-height: 1.5rem;
+    
+}
+
+
+
+
+
+
+.how-it-work{
+
+    padding-top: 6rem;
+    padding-bottom: 5rem;
+    
+    
+
+
+}
+
+.how-work{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 3rem;
+    
+    
+    
+    
+}
+
+.how-work__top{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9rem;
+    height: 25rem;
+}
+
+.how-work__top--picture{
+
+    flex-basis: 50%;
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.how-work__top--image{
+
+    width: 45rem;
+    padding: 4rem;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+.how-work__top--text{
+
+    flex-basis: 50%;
+}
+
+
+.how-work__title{
+
+    font-family: "Exo2-Bold";
+    font-size: 2rem;
+}
+
+.how-work__caption{
+
+    font-family: "Exo2-SemiBold";
+    font-size: 1.5rem;
+    color: rgba(28, 29, 34, 100%) ;
+    line-height: 2rem;
+    width: 50rem;
+}
+
+
+.how-work__bottom{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9rem;
+    flex-direction: row-reverse;
+    height: 25rem;
+}
+
+.how-work__bottom--picture{
+
+    flex-basis: 50%;
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.how-work__bottom--image{
+
+    width: 37rem;
+    padding: 4rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.how-work__bottom--text{
+
+    flex-basis: 50%;
+}
+
+
+
+
+.start-planing{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6rem;
+    background-color: #1d233d;
+    border-radius: 6rem 6rem 0 0;
+    
+}
+
+
+.start-planing .section-title {
+    color: var(--primery-color);
+}
+
+.start-planing .section-caption {
+    color: var(--primery-color);
+}
+
+
+.start-planing__btn{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Exo2-SemiBold";
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    background-color: #775ee9;
+    width: 10rem;
+    height: 4rem;
+    margin: 2.5rem 0 0 0;
+    color: var(--primery-color);
+    margin: auto;
+    margin-top: 5rem;
+    cursor: pointer;
+    
+}
+
+
+
+
+.copy-right{
+
+    color: var(--primery-color);
+    font-family: "Exo2-SemiBold";
+    margin-top: 2rem;
+}
+
