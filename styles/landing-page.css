@@ -235,10 +235,11 @@ ul {
 .home__caption{
 
     width: 41rem;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-family: "Exo2-SemiBold";
     margin: 2.5rem 0 0 0;
     color: var(--primery-color);
+    
 }
 
 .home__link{
@@ -473,6 +474,8 @@ ul {
 
     padding-top: 6rem;
     padding-bottom: 5rem;
+    background-color: #775ee9;
+    
     
 
 }
@@ -484,6 +487,7 @@ ul {
     justify-content: space-between;
     flex-direction: column;
     padding-top: 3rem;
+    
     
     
     
