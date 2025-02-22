@@ -576,3 +576,48 @@ ul {
     flex-basis: 50%;
 }
 
+
+
+
+.start-planing{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 7rem;
+    padding-bottom: 6rem;
+    background-color: #1d233d;
+    border-radius: 6rem;
+    
+}
+
+
+.start-planing .section-title {
+    color: var(--primery-color);
+}
+
+.start-planing .section-caption {
+    color: var(--primery-color);
+}
+
+
+.start-planing__btn{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Exo2-SemiBold";
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    background-color: #775ee9;
+    width: 10rem;
+    height: 4rem;
+    margin: 2.5rem 0 0 0;
+    color: var(--primery-color);
+    margin: auto;
+    margin-top: 5rem;
+    
+}
+
+
