@@ -10,33 +10,32 @@ const panelContent = document.querySelectorAll(".panel__content");
 menuList.forEach(item => {
     item.addEventListener('click', function() {
         let contentId = this.getAttribute("data-content-id");
-        
-        
-        document.querySelector(".menu-list__item--active")?.classList.remove("menu-list__item--active");
-        document.querySelector(".panel__content.content--show")?.classList.remove("content--show");
-
-        
-        document.querySelector(".panel").classList.toggle("panel--close");
-        document.querySelector(".wrapper").classList.toggle("wrapper--close");
-
-        
-        this.classList.add('menu-list__item--active');
-
-
-
         let contentElement = document.querySelector(contentId);
-        if (contentElement && !contentElement.classList.contains("content--show")) {
-            contentElement.classList.add("content--show");
+        let activeItem = document.querySelector(".menu-list__item--active");
+        let activeContent = document.querySelector(".panel__content.content--show");
+
+    
+        if (activeItem === this) {
+            this.classList.remove("menu-list__item--active");
+            activeContent?.classList.remove("content--show");
+            document.querySelector(".panel").classList.add("paenl--close");
+            document.querySelector(".wrapper").classList.remove("wrapper--close")
+        } else {
+           
+            activeItem?.classList.remove("menu-list__item--active");
+            activeContent?.classList.remove("content--show");
+
+        
+            this.classList.add("menu-list__item--active");
+            contentElement?.classList.add("content--show");
+            document.querySelector(".panel").classList.remove("paenl--close");
+            document.querySelector(".wrapper").classList.add("wrapper--close")
         }
     });
 });
 
-document.querySelector(".panel").addEventListener("transitionend", () => {
-    if (document.querySelector(".panel").classList.contains("panel--close")) {
-        document.querySelector(".menu-list__item--active")?.classList.remove("menu-list__item--active");
-        document.querySelector(".panel__content.content--show")?.classList.remove("content--show");
-    }
-});
+
+
 
 
 
