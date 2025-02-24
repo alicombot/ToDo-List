@@ -454,7 +454,7 @@ ul {
 }
 
 
-.manage-list--active~.manage-list__content {
+.manage-list__content--active {
     height: 100%;
     overflow: auto;
     opacity: 1;

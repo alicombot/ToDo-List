@@ -1,5 +1,6 @@
 const menuList = document.querySelectorAll(".menu-list__item");
-const managelistWrapper = document.querySelectorAll(".manage-list__wrapper");
+const titlepanelHead = document.querySelector(".panel__title");
+const managelistWrappers = document.querySelectorAll(".manage-list__wrapper");
 const chevronRight = document.querySelectorAll(".chevron-right");
 const panelthemChange = document.querySelectorAll(".panel-them__change");
 const panelContent = document.querySelectorAll(".panel__content");
@@ -39,11 +40,26 @@ menuList.forEach(item => {
 
 
 
-managelistWrapper.forEach(managelistWrapper => {
-    managelistWrapper.addEventListener('click', function(){
-        this.classList.toggle('manage-list--active')
-    })
-})
+
+managelistWrappers.forEach(wrapper => {
+    wrapper.addEventListener('click', function () {
+        const content = this.nextElementSibling;
+        const isActive = this.classList.contains("manage-list--active"); 
+        this.classList.toggle("manage-list--active");
+        content.classList.toggle("manage-list__content--active");
+        
+        if (!isActive) {
+            const titlemanageList = this.querySelector(".manage-list__title");
+            if (titlemanageList) {
+                titlepanelHead.textContent = titlemanageList.textContent;
+            }
+        }
+    });
+});
+
+
+
+
 
 
 panelthemChange.forEach(panelthemChange => {
