@@ -4,7 +4,8 @@ const managelistWrappers = document.querySelectorAll(".manage-list__wrapper");
 const chevronRight = document.querySelectorAll(".chevron-right");
 const panelthemChange = document.querySelectorAll(".panel-them__change");
 const panelContent = document.querySelectorAll(".panel__content");
-
+const statusTask = document.querySelectorAll(".status-task__item");
+const statusProject = document.querySelectorAll(".status-project__item");
 
 
 
@@ -48,12 +49,12 @@ managelistWrappers.forEach(wrapper => {
         this.classList.toggle("manage-list--active");
         content.classList.toggle("manage-list__content--active");
         
-        if (!isActive) {
-            const titlemanageList = this.querySelector(".manage-list__title");
-            if (titlemanageList) {
-                titlepanelHead.textContent = titlemanageList.textContent;
-            }
-        }
+        // if (!isActive) {
+        //     const titlemanageList = this.querySelector(".manage-list__title");
+        //     if (titlemanageList) {
+        //         titlepanelHead.textContent = titlemanageList.textContent;
+        //     }
+        // }
     });
 });
 
@@ -71,3 +72,21 @@ panelthemChange.forEach(panelthemChange => {
 
 
 
+statusTask.forEach(statusTask => {
+    statusTask.addEventListener('click', function(){
+        isActiveCurrent = document.querySelector(".status-task__item--active")
+        isActive = this.lastChild;
+        isActiveCurrent.classList.remove("status-task__item--active")
+        isActive.classList.toggle("status-task__item--active")
+    })
+})
+
+
+statusProject.forEach(statusProject => {
+    statusProject.addEventListener('click', function(){
+        isActiveCurrent = document.querySelector(".status-project__item--active")
+        isActive = this.lastChild;
+        isActiveCurrent.classList.remove("status-project__item--active")
+        isActive.classList.toggle("status-project__item--active")
+    })
+})

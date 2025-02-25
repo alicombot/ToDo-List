@@ -463,13 +463,29 @@ ul {
 
 .status-task {}
 
-.status-task__item {
-    padding: 1rem 1rem 1rem 2.3rem;
+
+.status-task__item--active,
+.status-project__item--active{
+    padding: .8rem 1.8rem;
+    margin-left: -1.8rem;
+    border-radius: 5rem;
+    background-color: rgba(28, 29, 34, 0.04);
+    color: rgba(28, 29, 34, 1);
+    transition: color .2s ease-in;
+}
+
+
+.status-task__item,
+.status-project__item {
+    padding: 1rem 1rem 1rem 4rem;
     position: relative;
     font-family: "Exo2-SemiBold";
     font-size: 1.6rem;
+    cursor: pointer;
+    color: rgba(28, 29, 34, 0.5);
 }
 
+.status-project__item::after,
 .status-task__item::after {
     content: "";
     position: absolute;
@@ -480,6 +496,7 @@ ul {
     top: 0;
     bottom: 0;
     margin: auto 0;
+    margin-right: 2rem;
 }
 
 

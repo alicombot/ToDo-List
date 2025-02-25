@@ -374,7 +374,9 @@
 
 
     @media (max-width: 576px) {
-
+        *{
+            cursor: auto;
+        }
         .nav__item--date {
             display: none;
         }
@@ -468,6 +470,9 @@
 
 
     @media (max-width: 440px){
+        .manage-list {
+            min-height: 18rem;
+        }
 
         .section-caption{
             width: 39rem;
