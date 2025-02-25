@@ -90,3 +90,19 @@ statusProject.forEach(statusProject => {
         isActive.classList.toggle("status-project__item--active")
     })
 })
+
+
+
+function toggleSortOptions() {
+    var sortOptions = document.getElementById("sort-options");
+    if (sortOptions.style.display === "block") {
+        sortOptions.style.display = "none";
+    } else {
+        sortOptions.style.display = "block";
+    }
+}
+
+function selectOption(option) {
+    alert("You selected: " + option);
+    document.getElementById("sort-options").style.display = "none";
+}

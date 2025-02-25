@@ -214,9 +214,10 @@
             <main class="main">
 
                 <div class="under-header">
+
                     <div class="sort">
 
-                        <a href="#" class="sort__wrapper" >
+                        <a href="#" class="sort__wrapper" onclick="toggleSortOptions()" >
 
                             <p class="sort__text">Sort</p>
 
@@ -230,6 +231,14 @@
                         
 
                         </a>
+
+                        <div id="sort-options" class="sort-options">
+                            <div class="sort-option" onclick="selectOption('Newest')">Newest</div>
+                            <div class="sort-option" onclick="selectOption('Oldest')">Oldest</div>
+                            <div class="sort-option" onclick="selectOption('Due Soon')">Due Soon</div>
+                            <div class="sort-option" onclick="selectOption('High Priority')">High Priority</div>
+                            <div class="sort-option" onclick="selectOption('A-Z')">A-Z</div>
+                        </div>
                         
 
                     </div>
