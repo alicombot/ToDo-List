@@ -612,6 +612,60 @@ ul {
 
 
 
+
+.nav__item--search{
+    position: relative;
+    transition: all 1s;
+    width: 5rem;
+    height: 5rem;
+    background: white;
+    border-radius: 2.5rem;
+    border: 4px solid white;
+    padding: 5px;
+}
+
+.nav__item--search input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 3rem;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1.3rem;
+    font-family: "Exo2-SemiBold";
+    border-radius: 2rem;
+    padding: 0 20px;
+}
+
+.input__logo{
+    
+    padding: 10px;
+    position: absolute;
+    top: 0; 
+    right: 0;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+.nav__item--search:hover{
+    width: 300px;
+    cursor: pointer;
+}
+
+.nav__item--search:hover input{
+    display: block;
+}
+
+.nav__item--search:hover .input__logo{
+    background: white;
+    color: white;
+}
+
+
+
 /* 
 
 
@@ -640,7 +694,13 @@ ul {
     padding: 0 3rem 0 3rem;
 }
 
-.sort {
+
+
+
+.sort__wrapper{
+
+    cursor: pointer;
+    text-decoration: none;
     display: flex;
     justify-content: flex-end;
     flex-direction: row-reverse;
@@ -649,6 +709,7 @@ ul {
 }
 
 .sort__text {
+
     font-family: "Exo2-SemiBold";
     font-size: 1.3rem;
     color: var(--text-second-color);
@@ -658,6 +719,7 @@ ul {
 
 
 .line {
+
     background-color: var(--text-second-color);
     width: 100%;
     height: .2rem;
