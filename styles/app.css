@@ -651,7 +651,7 @@ ul {
 }
 
 .nav__item--search:hover{
-    width: 300px;
+    width: 30rem;
     cursor: pointer;
 }
 

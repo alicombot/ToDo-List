@@ -315,6 +315,11 @@
 
     @media (max-width: 920px) {
 
+        .nav__item--search:hover{
+            width: 25rem;
+            cursor: pointer;
+        }
+
         .content {
 
             flex-wrap: wrap;
@@ -339,6 +344,62 @@
             height: 90rem;
         }
     }
+
+
+    @media (max-width: 885px){
+
+        .nav__item--search:hover{
+
+            width: 20rem;
+            cursor: pointer;
+        }
+        
+    }
+
+
+    
+    @media (max-width: 835px){
+        
+        .nav__item--search:hover{
+
+            width: 18rem;
+            cursor: pointer;
+        }
+        
+    }
+
+    @media (max-width: 815px){
+        
+        .nav__item--search:hover{
+
+            width: 17rem;
+            cursor: pointer;
+        }
+        
+    }
+
+    @media (max-width: 805px){
+        
+        .nav__item--search:hover{
+
+            width: 16rem;
+            cursor: pointer;
+        }
+        
+    }
+
+
+    @media (max-width: 795px){
+        
+        .nav__item--search:hover{
+
+            width: 15rem;
+            cursor: pointer;
+            
+        }
+        
+    }
+
 
 
 
