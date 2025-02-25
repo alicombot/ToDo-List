@@ -106,3 +106,38 @@ function selectOption(option) {
     alert("You selected: " + option);
     document.getElementById("sort-options").style.display = "none";
 }
+
+
+
+
+function toggleActions(taskId) {
+    // همه منوها را مخفی کنید
+    const allMenus = document.querySelectorAll('.task-options');
+    allMenus.forEach(menu => {
+      menu.style.display = 'none';
+    });
+  
+    // منوی مربوط به تسک انتخاب‌شده را نمایش دهید
+    const menu = document.getElementById(`task-options-${taskId}`);
+    if (menu.style.display === 'block') {
+      menu.style.display = 'none';
+    } else {
+      menu.style.display = 'block';
+    }
+  }
+
+
+
+  // بستن منوها با کلیک خارج از منو
+document.addEventListener('click', function(event) {
+    if (!event.target.matches('.task__title--icon')) {
+      const allMenus = document.querySelectorAll('.task-options');
+      allMenus.forEach(menu => {
+        menu.style.display = 'none';
+      });
+    }
+  });
+  
+
+
+  

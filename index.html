@@ -217,7 +217,7 @@
 
                     <div class="sort">
 
-                        <a href="#" class="sort__wrapper" onclick="toggleSortOptions()" >
+                        <div class="sort__wrapper" onclick="toggleSortOptions()" >
 
                             <p class="sort__text">Sort</p>
 
@@ -230,7 +230,7 @@
                         </svg>
                         
 
-                        </a>
+                        </div>
 
                         <div id="sort-options" class="sort-options">
                             <div class="sort-option" onclick="selectOption('Newest')">Newest</div>
@@ -279,7 +279,7 @@
                             <div class="task__title">
                                 <h3>Design new ui presentation</h3>
 
-                                <div class="task__title--icon">
+                                <div class="task__title--icon" onclick="toggleActions(1)">
 
                                     <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -288,7 +288,16 @@
                                         <circle cx="1" cy="1" r="1" fill="#1C1D22" />
                                     </svg>
 
+                                    <div id="task-options-1" class="task-options">
+                                        <div class="task-option" >Delete</div>
+                                        <div class="task-option" >Edit</div>
+    
+                                    </div>
+
                                 </div>
+
+                                
+
                             </div>
 
                             <div class="task__description">
@@ -362,7 +371,7 @@
                             <div class="task__title">
                                 <h3>Add more ui/ux mockups</h3>
 
-                                <div class="task__title--icon">
+                                <div class="task__title--icon" onclick="toggleActions(2)">
 
                                     <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -370,6 +379,12 @@
                                         <circle cx="5" cy="1" r="1" fill="#1C1D22" />
                                         <circle cx="1" cy="1" r="1" fill="#1C1D22" />
                                     </svg>
+
+                                    <div id="task-options-2" class="task-options">
+                                        <div class="task-option" >Delete</div>
+                                        <div class="task-option" >Edit</div>
+    
+                                    </div>
 
                                 </div>
                             </div>
@@ -435,7 +450,7 @@
                             <div class="task__title">
                                 <h3>Design few mobile screens</h3>
 
-                                <div class="task__title--icon">
+                                <div class="task__title--icon" onclick="toggleActions(3)">
 
                                     <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -443,6 +458,12 @@
                                         <circle cx="5" cy="1" r="1" fill="#1C1D22" />
                                         <circle cx="1" cy="1" r="1" fill="#1C1D22" />
                                     </svg>
+
+                                    <div id="task-options-3" class="task-options">
+                                        <div class="task-option" >Delete</div>
+                                        <div class="task-option" >Edit</div>
+    
+                                    </div>
 
                                 </div>
                             </div>
@@ -546,7 +567,7 @@
                             <div class="task__title">
                                 <h3>Design system update</h3>
 
-                                <div class="task__title--icon">
+                                <div class="task__title--icon" onclick="toggleActions(4)">
 
                                     <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -554,6 +575,12 @@
                                         <circle cx="5" cy="1" r="1" fill="#1C1D22" />
                                         <circle cx="1" cy="1" r="1" fill="#1C1D22" />
                                     </svg>
+
+                                    <div id="task-options-4" class="task-options">
+                                        <div class="task-option" >Delete</div>
+                                        <div class="task-option" >Edit</div>
+    
+                                    </div>
 
                                 </div>
                             </div>
@@ -619,7 +646,7 @@
                             <div class="task__title">
                                 <h3>Create brand guideline</h3>
 
-                                <div class="task__title--icon">
+                                <div class="task__title--icon" onclick="toggleActions(5)">
 
                                     <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -627,6 +654,12 @@
                                         <circle cx="5" cy="1" r="1" fill="#1C1D22" />
                                         <circle cx="1" cy="1" r="1" fill="#1C1D22" />
                                     </svg>
+
+                                    <div id="task-options-5" class="task-options">
+                                        <div class="task-option" >Delete</div>
+                                        <div class="task-option" >Edit</div>
+    
+                                    </div>
 
                                 </div>
                             </div>
@@ -702,7 +735,7 @@
                             <div class="task__title">
                                 <h3>Create wireframe for ios app</h3>
 
-                                <div class="task__title--icon">
+                                <div class="task__title--icon" onclick="toggleActions(6)">
 
                                     <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -710,6 +743,12 @@
                                         <circle cx="5" cy="1" r="1" fill="#1C1D22" />
                                         <circle cx="1" cy="1" r="1" fill="#1C1D22" />
                                     </svg>
+
+                                    <div id="task-options-6" class="task-options">
+                                        <div class="task-option" >Delete</div>
+                                        <div class="task-option" >Edit</div>
+    
+                                    </div>
 
                                 </div>
                             </div>
@@ -804,7 +843,7 @@
                             <div class="task__title">
                                 <h3>Add product to the market</h3>
 
-                                <div class="task__title--icon">
+                                <div class="task__title--icon" onclick="toggleActions(7)">
 
                                     <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -812,6 +851,12 @@
                                         <circle cx="5" cy="1" r="1" fill="#1C1D22" />
                                         <circle cx="1" cy="1" r="1" fill="#1C1D22" />
                                     </svg>
+
+                                    <div id="task-options-7" class="task-options">
+                                        <div class="task-option" >Delete</div>
+                                        <div class="task-option" >Edit</div>
+    
+                                    </div>
 
                                 </div>
                             </div>
@@ -887,7 +932,7 @@
                             <div class="task__title">
                                 <h3>Lunch product promotion</h3>
 
-                                <div class="task__title--icon">
+                                <div class="task__title--icon" onclick="toggleActions(8)">
 
                                     <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -895,6 +940,12 @@
                                         <circle cx="5" cy="1" r="1" fill="#1C1D22" />
                                         <circle cx="1" cy="1" r="1" fill="#1C1D22" />
                                     </svg>
+
+                                    <div id="task-options-8" class="task-options">
+                                        <div class="task-option" >Delete</div>
+                                        <div class="task-option" >Edit</div>
+    
+                                    </div>
 
                                 </div>
                             </div>
@@ -970,7 +1021,7 @@
                             <div class="task__title">
                                 <h3>Make twitter banner</h3>
 
-                                <div class="task__title--icon">
+                                <div class="task__title--icon" onclick="toggleActions(9)">
 
                                     <svg width="10" height="2" viewBox="0 0 10 2" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -978,6 +1029,12 @@
                                         <circle cx="5" cy="1" r="1" fill="#1C1D22" />
                                         <circle cx="1" cy="1" r="1" fill="#1C1D22" />
                                     </svg>
+
+                                    <div id="task-options-9" class="task-options">
+                                        <div class="task-option" >Delete</div>
+                                        <div class="task-option" >Edit</div>
+    
+                                    </div>
 
                                 </div>
                             </div>
