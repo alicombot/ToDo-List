@@ -134,10 +134,18 @@
 
 
 @media (max-width: 992px) {
+
         .wrapper {
+
             width: 100%;
-            padding-left: 0;
+            padding: 0;
             margin-left: 7.5rem;
+            
+        }
+
+        .content__items{
+
+            width:  28rem;
         }
 
         .task__title h3 {
@@ -182,7 +190,9 @@
         }
 
         .nav{
-            padding: 1.5rem 0;
+
+            padding: 1rem 3rem 1rem 3rem;
+
         }
         
         .menu{
