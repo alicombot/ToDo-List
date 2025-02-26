@@ -6,7 +6,7 @@ const panelthemChange = document.querySelectorAll(".panel-them__change");
 const panelContent = document.querySelectorAll(".panel__content");
 const statusTask = document.querySelectorAll(".status-task__item");
 const statusProject = document.querySelectorAll(".status-project__item");
-
+const addProject = document.querySelector(".panel__svg");
 
 
 menuList.forEach(item => {
@@ -90,3 +90,21 @@ statusProject.forEach(statusProject => {
         isActive.classList.toggle("status-project__item--active")
     })
 })
+
+
+
+
+addProject.addEventListener('click', function(){
+    const newProject = document.createElement('li');
+    const text = document.createElement('span');
+    text.classList = ""
+    text.textContent = "new-project"
+    newProject.classList = "status-project__item";
+    newProject.appendChild(text)
+    const addList = document.querySelector(".status-task")
+    addList.appendChild(newProject)
+})
+
+
+
+
