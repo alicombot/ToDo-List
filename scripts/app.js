@@ -93,14 +93,25 @@ statusProject.forEach(statusProject => {
 
 
 
+
 function toggleSortOptions() {
-    var sortOptions = document.getElementById("sort-options");
-    if (sortOptions.style.display === "block") {
-        sortOptions.style.display = "none";
+    const sortOptions = document.getElementById('sort-options');
+    if (sortOptions.style.display === 'none' || sortOptions.style.display === '') {
+        sortOptions.style.display = 'block';
     } else {
-        sortOptions.style.display = "block";
+        sortOptions.style.display = 'none';
     }
 }
+
+document.addEventListener('click', function(event) {
+    const sortWrapper = document.querySelector('.sort__wrapper');
+    const sortOptions = document.getElementById('sort-options');
+
+    if (sortOptions && !sortWrapper.contains(event.target)){
+        sortOptions.style.display = 'none';
+    }
+
+});
 
 function selectOption(option) {
     alert("You selected: " + option);
@@ -111,13 +122,13 @@ function selectOption(option) {
 
 
 function toggleActions(taskId) {
-    // همه منوها را مخفی کنید
+
     const allMenus = document.querySelectorAll('.task-options');
     allMenus.forEach(menu => {
       menu.style.display = 'none';
     });
   
-    // منوی مربوط به تسک انتخاب‌شده را نمایش دهید
+
     const menu = document.getElementById(`task-options-${taskId}`);
     if (menu.style.display === 'block') {
       menu.style.display = 'none';
@@ -128,14 +139,16 @@ function toggleActions(taskId) {
 
 
 
-  // بستن منوها با کلیک خارج از منو
-document.addEventListener('click', function(event) {
+
+  document.addEventListener('click', function(event) {
+
     if (!event.target.matches('.task__title--icon')) {
       const allMenus = document.querySelectorAll('.task-options');
       allMenus.forEach(menu => {
         menu.style.display = 'none';
       });
     }
+
   });
   
 
