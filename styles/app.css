@@ -409,7 +409,9 @@ ul {
 */
 
 
-.manage-list {}
+.manage-list {
+    height: 16rem;
+}
 
 
 .manage-list__wrapper {
