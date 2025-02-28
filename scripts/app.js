@@ -41,7 +41,6 @@ menuList.forEach(item => {
 
 
 
-
 managelistWrappers.forEach(wrapper => {
     wrapper.addEventListener('click', function () {
         const content = this.nextElementSibling;
@@ -49,12 +48,12 @@ managelistWrappers.forEach(wrapper => {
         this.classList.toggle("manage-list--active");
         content.classList.toggle("manage-list__content--active");
         
-        // if (!isActive) {
-        //     const titlemanageList = this.querySelector(".manage-list__title");
-        //     if (titlemanageList) {
-        //         titlepanelHead.textContent = titlemanageList.textContent;
-        //     }
-        // }
+        if (!isActive) {
+            const titlemanageList = this.querySelector(".manage-list__title");
+            if (titlemanageList) {
+                titlepanelHead.textContent = titlemanageList.textContent;
+            }
+        }
     });
 });
 
@@ -78,16 +77,6 @@ statusTask.forEach(statusTask => {
         isActive = this.lastChild;
         isActiveCurrent.classList.remove("status-task__item--active")
         isActive.classList.toggle("status-task__item--active")
-    })
-})
-
-
-statusProject.forEach(statusProject => {
-    statusProject.addEventListener('click', function(){
-        isActiveCurrent = document.querySelector(".status-project__item--active")
-        isActive = this.lastChild;
-        isActiveCurrent.classList.remove("status-project__item--active")
-        isActive.classList.toggle("status-project__item--active")
     })
 })
 
@@ -158,17 +147,48 @@ function toggleActions(taskId) {
 
 
 
-addProject.addEventListener('click', function(){
+addProject.addEventListener('click', function () {
+    const addList = document.querySelector(".status-task");
+
+    if (addList.querySelector(".add-project")) {
+        return;
+    }
+
     const newProject = document.createElement('li');
-    const text = document.createElement('span');
-    text.classList = ""
-    text.textContent = "new-project"
-    newProject.classList = "status-project__item";
-    newProject.appendChild(text)
-    const addList = document.querySelector(".status-task")
-    addList.appendChild(newProject)
-})
+    const text = document.createElement('input');
+    text.classList.add("add-project");
+
+    text.addEventListener('keypress', function (e) {
+        if (e.key === 'Enter' && text.value.trim() !== '') {
+            text.remove();
+            const value = text.value;
+            const item = document.createElement('span');
+            item.classList = ''
+            item.textContent = value;
+            newProject.appendChild(item);
+        }
+    });
+
+    newProject.classList.add("status-project__item");
+    newProject.appendChild(text);
+    addList.appendChild(newProject);
+    text.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    text.focus();
+});
 
 
 
+const taskList = document.querySelector('.status-task');
+taskList.addEventListener('click', function(event) {
+   
+    if (event.target && event.target.tagName === 'SPAN') {
+      
+        const allSpans = taskList.querySelectorAll('span');
+        allSpans.forEach(span => {
+            span.classList.remove('status-project__item--active');
+        });
 
+        
+        event.target.classList.add('status-project__item--active');
+    }
+});

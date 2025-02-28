@@ -377,7 +377,7 @@ ul {
     width: 100%;
     margin: 1rem 1rem 1rem 0;
     border-radius: .8rem;
-    border-color: rgba(169, 169, 169, 1);
+    border: .2rem solid rgba(169, 169, 169, 1);
     border-width: .1rem;
     padding: 1rem;
     font-size: 1.2rem;
@@ -470,7 +470,8 @@ ul {
     transition: all .2s ease-in;
 }
 
-.status-task {}
+.status-task {
+}
 
 
 .status-task__item--active,
@@ -481,6 +482,7 @@ ul {
     background-color: rgba(28, 29, 34, 0.04);
     color: rgba(28, 29, 34, 1);
     transition: color .2s ease-in;
+    user-select: none;
 }
 
 
@@ -490,7 +492,7 @@ ul {
     position: relative;
     font-family: "Exo2-SemiBold";
     font-size: 1.6rem;
-    cursor: pointer;
+    user-select: none;
     color: rgba(28, 29, 34, 0.5);
 }
 
@@ -510,7 +512,14 @@ ul {
 
 
 
-
+.add-project{
+    width: 80%;
+    outline: none;
+    padding: .6rem 1rem;
+    font-size: 1.2rem;
+    border-radius: .8rem;
+    border: .2rem solid rgba(169, 169, 169, 1);
+}
 
 
 
