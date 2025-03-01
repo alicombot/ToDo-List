@@ -192,3 +192,26 @@ taskList.addEventListener('click', function(event) {
         event.target.classList.add('status-project__item--active');
     }
 });
+
+
+
+
+
+function toggleNotificationOptions() {
+    const notifOptions = document.getElementById('notification-options');
+    if (notifOptions.style.display === 'none' || notifOptions.style.display === '') {
+        notifOptions.style.display = 'block';
+    } else {
+        notifOptions.style.display = 'none';
+    }
+}
+
+document.addEventListener('click', function(event) {
+    const notiftWrapper = document.querySelector('.nav__item--notification');
+    const notifOptions = document.getElementById('notification-options');
+
+    if (notifOptions && !notiftWrapper.contains(event.target)){
+        notifOptions.style.display = 'none';
+    }
+
+});

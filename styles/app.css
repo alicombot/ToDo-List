@@ -611,7 +611,88 @@ ul {
 
 .nav__item--notification {
     position: relative;
+    cursor: pointer;
 }
+
+
+.notification-options {
+
+    display: none;
+    position: absolute;
+    background-color: var(--primery-color);
+    min-width: 30rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 1rem;
+    margin-top: 5px;
+    text-align: center;
+    top: 3.5rem;
+    right: -13.5rem;
+    padding: 1.5rem;
+}
+
+
+.notification-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: black;
+    margin-top: 1rem;
+    box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.1);
+
+}
+
+
+
+.blue{
+
+    background: linear-gradient(90deg,#0032e9 0%, var(--primery-color) 40%);
+}
+.red{
+    background: linear-gradient(90deg,#e90000 0%, var(--primery-color) 40%);
+}
+.green{
+    background: linear-gradient(90deg,#00e936 0%, var(--primery-color) 40%);
+}
+
+.notification-option:first-child{
+    margin-top: 0;
+}
+
+.notification-text{
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: .5rem;
+
+}
+
+.notification-start-icon{
+    padding-right: 1.5rem;
+}
+
+.notification-end-icon{
+    padding-left: 1rem;
+}
+
+
+
+.notification-title{
+
+    font-family: "Exo2-Bold";
+    font-size: 1.3rem;
+}
+
+.notification-description{
+
+    font-family: "Exo2-SemiBold";
+    font-size: 1.1rem;
+}
+
 
 .nav__item--notification::before {
     content: " ";
