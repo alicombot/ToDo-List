@@ -142,12 +142,8 @@ function toggleActions(taskId) {
   
 
 
-  
 
-
-
-
-addProject.addEventListener('click', function () {
+  addProject.addEventListener('click', function () {
     const addList = document.querySelector(".status-task");
 
     if (addList.querySelector(".add-project")) {
@@ -160,14 +156,27 @@ addProject.addEventListener('click', function () {
 
     text.addEventListener('keypress', function (e) {
         if (e.key === 'Enter' && text.value.trim() !== '') {
+            saveText();
+        }
+    });
+
+    text.addEventListener('blur', function () {
+        if (text.value.trim() !== '') {
+            saveText();
+        } else {
+            newProject.remove();
+        }
+    });
+
+    function saveText() {
+        const value = text.value.trim();
+        if (value !== '') {
             text.remove();
-            const value = text.value;
             const item = document.createElement('span');
-            item.classList = ''
             item.textContent = value;
             newProject.appendChild(item);
         }
-    });
+    }
 
     newProject.classList.add("status-project__item");
     newProject.appendChild(text);
@@ -175,6 +184,7 @@ addProject.addEventListener('click', function () {
     text.scrollIntoView({ behavior: 'smooth', block: 'center' });
     text.focus();
 });
+
 
 
 
@@ -215,3 +225,4 @@ document.addEventListener('click', function(event) {
     }
 
 });
+
